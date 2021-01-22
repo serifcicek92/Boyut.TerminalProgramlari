@@ -123,6 +123,26 @@ namespace Boyut.TerminalProgramlari.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap RAFECZANE {
+            get {
+                object obj = ResourceManager.GetObject("RAFECZANE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap RAFHASTANE {
+            get {
+                object obj = ResourceManager.GetObject("RAFHASTANE", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap reyon_sorgu {
             get {
                 object obj = ResourceManager.GetObject("reyon_sorgu", resourceCulture);

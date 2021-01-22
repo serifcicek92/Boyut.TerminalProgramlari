@@ -120,6 +120,8 @@
     <Content Include="Resources\logo.ico" />
     <Content Include="Resources\logo.png" />
     <Content Include="Resources\raf.png" />
+    <None Include="Resources\RAFHASTANE.png" />
+    <None Include="Resources\RAFECZANE.png" />
     <None Include="Resources\reyon_sorgu.png" />
     <Resource Include="Resources\spotreyon.png" />
   </ItemGroup>
