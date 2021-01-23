@@ -104,6 +104,7 @@ namespace Boyut.TerminalProgramlari
                         trReplace(dosya).ToUpper().Contains("SEPET") ||
                         trReplace(dosya).ToUpper().Contains("REYON") ||
                         trReplace(dosya).ToUpper().Contains("RAF") ||
+                        trReplace(dosya).ToUpper().Contains("SORGU") ||
                         trReplace(dosya).ToUpper().Contains("KONTROL"))
                     {
                         addNewButton(x + 20, y + 20, item.FullName, birKenar);
@@ -148,6 +149,7 @@ namespace Boyut.TerminalProgramlari
                         trReplace(dosya).ToUpper().Contains("REYON") ||
                         trReplace(dosya).ToUpper().Contains("SPOT") ||
                         trReplace(dosya).ToUpper().Contains("RAF") ||
+                        trReplace(dosya).ToUpper().Contains("SORGU") ||
                         trReplace(dosya).ToUpper().Contains("KONTROL"))
 
                     {
