@@ -136,8 +136,20 @@
   <data name="raf" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\raf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="RAFECZANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAFECZANE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RAFHASTANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAFHASTANE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="reyon_sorgu" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reyon_sorgu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reyon_sorgu_Eczane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reyon_sorgu_Eczane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reyon_sorgu_Hastane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reyon_sorgu_Hastane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sayim" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sayim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>

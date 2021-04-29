@@ -33,18 +33,18 @@ namespace Boyut.TerminalProgramlari
 
 
             String uName = Environment.UserName;
-            string calcIp = uName.Substring(uName.Length-2,2);
+            string calcIp = uName.Substring(uName.Length - 2, 2);
 
             label1.Text = uName + "-";
 
 
-            if (int.TryParse(calcIp,out int output))
+            if (int.TryParse(calcIp, out int output))
             {
                 label1.Text += ipBloklari[0] + "." + ipBloklari[1] + "." + ipBloklari[2] + "." + (Convert.ToInt32(calcIp) + 10);
             }
-            else if(int.TryParse(uName.Substring(uName.Length - 1, 1), out int output2))
+            else if (int.TryParse(uName.Substring(uName.Length - 1, 1), out int output2))
             {
-               string calcIp2 = uName.Substring(uName.Length - 1, 1);
+                string calcIp2 = uName.Substring(uName.Length - 1, 1);
                 label1.Text += ipBloklari[0] + "." + ipBloklari[1] + "." + ipBloklari[2] + "." + (Convert.ToInt32(calcIp2) + 10);
             }
 
@@ -55,7 +55,7 @@ namespace Boyut.TerminalProgramlari
         {
 
         }
-        private void ekraniBoyutlandir() 
+        private void ekraniBoyutlandir()
         {
             this.StartPosition = FormStartPosition.Manual;
             this.Location = new Point(0, 0);
@@ -74,19 +74,21 @@ namespace Boyut.TerminalProgramlari
             DirectoryInfo d = new DirectoryInfo(path);
             this.files = d.GetFiles("*");
 
-            if (files.Count()<7){
+            if (files.Count() < 7)
+            {
                 birKenar = ekranGenislik / 2 - 50;
             }
-            else { 
+            else
+            {
                 birKenar = ekranGenislik / 6 - 50;
             }
-            
+
 
 
             if (ekranBoy < ekranGenislik)
             {
                 //birKenar = (birKenar) - 100;
-                birKenar = (birKenar) - Math.Abs(birKenar-120);
+                birKenar = (birKenar) - Math.Abs(birKenar - 120);
 
                 int say = 1;
                 foreach (var item in files)
@@ -95,14 +97,15 @@ namespace Boyut.TerminalProgramlari
                     var linkBol = item.FullName.Split('\\');
                     string dosya = linkBol[linkBol.Count() - 1];
 
-                   
+
                     if (trReplace(dosya).ToUpper().Contains("GIRIS") ||
                         trReplace(dosya).ToUpper().Contains("SAYIM") ||
                         trReplace(dosya).ToUpper().Contains("SEVKIYAT") ||
                         trReplace(dosya).ToUpper().Contains("SEPET") ||
                         trReplace(dosya).ToUpper().Contains("REYON") ||
                         trReplace(dosya).ToUpper().Contains("RAF") ||
-                        trReplace(dosya).ToUpper().Contains("KONTROL")) 
+                        trReplace(dosya).ToUpper().Contains("SORGU") ||
+                        trReplace(dosya).ToUpper().Contains("KONTROL"))
                     {
                         addNewButton(x + 20, y + 20, item.FullName, birKenar);
                         x += birKenar + 20;
@@ -137,7 +140,7 @@ namespace Boyut.TerminalProgramlari
                     var linkBol = item.FullName.Split('\\');
                     string dosya = linkBol[linkBol.Count() - 1];
 
-                   
+
 
                     if (trReplace(dosya).ToUpper().Contains("GIRIS") ||
                         trReplace(dosya).ToUpper().Contains("SAYIM") ||
@@ -146,6 +149,7 @@ namespace Boyut.TerminalProgramlari
                         trReplace(dosya).ToUpper().Contains("REYON") ||
                         trReplace(dosya).ToUpper().Contains("SPOT") ||
                         trReplace(dosya).ToUpper().Contains("RAF") ||
+                        trReplace(dosya).ToUpper().Contains("SORGU") ||
                         trReplace(dosya).ToUpper().Contains("KONTROL"))
 
                     {
@@ -165,7 +169,7 @@ namespace Boyut.TerminalProgramlari
                         //}
                         say++;
                     }
-                    
+
                 }
 
             }
@@ -192,18 +196,66 @@ namespace Boyut.TerminalProgramlari
             if (trReplace(dosya).ToUpper().Contains("SAYIM")) { button1.BackColor = Color.Blue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sayim; }
             else if (trReplace(dosya).ToUpper().Contains("SEVK")) { button1.BackColor = Color.LightGray; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sevkiyat; }
             else if (trReplace(dosya).ToUpper().Contains("SEPET")) { button1.BackColor = Color.LightBlue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sepet; button1.ForeColor = Color.Black; }
-            else if (trReplace(dosya).ToUpper().Contains("REYON SORGU") || trReplace(dosya).ToUpper().Contains("REYON_SORGU")) { button1.BackColor = Color.LightBlue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.reyon_sorgu; button1.ForeColor = Color.Black; }
+            else if (trReplace(dosya).ToUpper().Contains("REYON SORGU") || trReplace(dosya).ToUpper().Contains("REYON_SORGU") || trReplace(dosya).ToUpper().Contains("SORGU")) {
+                if (trReplace(dosya).ToUpper().Contains("ECZANE"))
+                {
+                    button1.BackColor = Color.LightBlue; button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.reyon_sorgu_Eczane;
+                    button1.ForeColor = Color.Black;
+                }
+                else if (trReplace(dosya).ToUpper().Contains("HASTANE") || trReplace(dosya).ToUpper().Contains("HASTA"))
+                {
+                    button1.BackColor = Color.LightBlue; button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.reyon_sorgu_Hastane;
+                    button1.ForeColor = Color.Black;
+                }
+                else
+                {
+                    button1.BackColor = Color.LightBlue; button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.reyon_sorgu;
+                    button1.ForeColor = Color.Black;
+                }
+                
+            }
             else if (trReplace(dosya).ToUpper().Contains("SPOT") || trReplace(dosya).ToUpper().Contains("SPOT")) { button1.BackColor = Color.LightBlue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.spotreyon; button1.ForeColor = Color.Black; }
-            else if (trReplace(dosya).ToUpper().Contains("RAF") || trReplace(dosya).ToUpper().Contains("RAF")) { button1.BackColor = Color.LightBlue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.raf; button1.ForeColor = Color.Black; }
-            else if (trReplace(dosya).ToUpper().Contains("REYON") || trReplace(dosya).ToUpper().Contains("KONTROL")) {
+            else if (trReplace(dosya).ToUpper().Contains("RAF") || trReplace(dosya).ToUpper().Contains("RAF"))
+            {
+                if (trReplace(dosya).ToUpper().Contains("ECZANE") && trReplace(dosya).ToUpper().Contains("RAF"))
+                {
+                    button1.BackColor = Color.LightBlue;
+                    button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.RAFECZANE;
+                    button1.BackgroundImageLayout = ImageLayout.Stretch;
+                    button1.ForeColor = Color.Black;
+
+                }
+                else if (trReplace(dosya).ToUpper().Contains("HASTANE") && trReplace(dosya).ToUpper().Contains("RAF"))
+                {
+                    button1.BackColor = Color.LightBlue;
+                    button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.RAFHASTANE;
+                    button1.BackgroundImageLayout = ImageLayout.Stretch;
+                    button1.ForeColor = Color.Black;
+
+                }
+                else
+                {
+                    button1.BackColor = Color.LightBlue;
+                    button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.raf;
+                    button1.ForeColor = Color.Black;
+                }
+            }
+            else if (trReplace(dosya).ToUpper().Contains("REYON") || trReplace(dosya).ToUpper().Contains("KONTROL"))
+            {
                 button1.BackColor = Color.Yellow; button1.Text = ""; button1.ForeColor = Color.Black;
                 button1.BackgroundImageLayout = ImageLayout.Stretch;
-                if (trReplace(dosya).ToUpper().Contains("ECZANE"))
+                if (trReplace(dosya).ToUpper().Contains("ECZANE") && trReplace(dosya).ToUpper().Contains("REYON"))
                 {
                     button1.BackgroundImage = Properties.Resources.eczane;
                     button1.BackgroundImageLayout = ImageLayout.Stretch;
                 }
-                else if (trReplace(dosya).ToUpper().Contains("HASTANE"))
+                else if (trReplace(dosya).ToUpper().Contains("HASTANE") && trReplace(dosya).ToUpper().Contains("REYON"))
                 {
                     button1.BackgroundImage = Properties.Resources.hastane;
                     button1.BackgroundImageLayout = ImageLayout.Stretch;
@@ -242,7 +294,7 @@ namespace Boyut.TerminalProgramlari
             {
                 RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
                 var a = "fafd";
-                if (key.GetValue("Boyut.TerminalProgramlari")!=null)
+                if (key.GetValue("Boyut.TerminalProgramlari") != null)
                 { // Eğer regeditte varsa, checkbox ı işaretle "\"" + Application.ExecutablePath + "\""
 
                 }
@@ -252,12 +304,12 @@ namespace Boyut.TerminalProgramlari
 
                 }
             }
-            catch(Exception E)
+            catch (Exception E)
             {
                 MessageBox.Show(E.Message);
             }
 
-            
+
             //RegistryKey key = Registry.CurrentUser.OpenSubKey(@"Software\Microsoft\Windows\CurrentVersion\Run", true);
             //key.DeleteValue(ProgramAdi);
         }
@@ -267,7 +319,7 @@ namespace Boyut.TerminalProgramlari
             Application.Exit();
         }
 
-        private  String trReplace(string metin)
+        private String trReplace(string metin)
         {
             metin = metin.ToUpper();
             //metin.Replace("ş", "S");
@@ -308,7 +360,7 @@ namespace Boyut.TerminalProgramlari
         public static bool WindowsLogOff()
         {
             //return ExitWindowsEx(0, 0);
-            return ExitWindowsEx(0 | 0x00000004, 0); 
+            return ExitWindowsEx(0 | 0x00000004, 0);
         }
     }
 }
