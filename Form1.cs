@@ -194,7 +194,27 @@ namespace Boyut.TerminalProgramlari
             string dosya = linkBol[linkBol.Count() - 1];
             if (trReplace(dosya).ToUpper().Contains("GIRIS")) { button1.BackColor = Color.Red; button1.Text = ""; button1.BackgroundImage = Properties.Resources.malgiris; }
             if (trReplace(dosya).ToUpper().Contains("SAYIM")) { button1.BackColor = Color.Blue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sayim; }
-            else if (trReplace(dosya).ToUpper().Contains("SEVK")) { button1.BackColor = Color.LightGray; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sevkiyat; }
+            else if (trReplace(dosya).ToUpper().Contains("SEVK")) {
+                if (trReplace(dosya).ToUpper().Contains("ECZANE"))
+                {
+                    button1.BackColor = Color.LightBlue; button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.SEVKIYATECZANE;
+                    button1.ForeColor = Color.Black;
+                }
+                else if (trReplace(dosya).ToUpper().Contains("HASTANE") || trReplace(dosya).ToUpper().Contains("HASTA"))
+                {
+                    button1.BackColor = Color.LightBlue; button1.Text = "";
+                    button1.BackgroundImage = Properties.Resources.SEVKIYATHASTANE;
+                    button1.ForeColor = Color.Black;
+                }
+                else
+                {
+                    button1.BackColor = Color.LightGray; button1.Text = ""; 
+                    button1.BackgroundImage = Properties.Resources.sevkiyat;
+                    button1.ForeColor = Color.Black;
+                }
+                
+            }
             else if (trReplace(dosya).ToUpper().Contains("SEPET")) { button1.BackColor = Color.LightBlue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sepet; button1.ForeColor = Color.Black; }
             else if (trReplace(dosya).ToUpper().Contains("REYON SORGU") || trReplace(dosya).ToUpper().Contains("REYON_SORGU") || trReplace(dosya).ToUpper().Contains("SORGU")) {
                 if (trReplace(dosya).ToUpper().Contains("ECZANE"))
