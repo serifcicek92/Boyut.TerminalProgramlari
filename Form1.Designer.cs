@@ -58,12 +58,13 @@
             // button2
             // 
             this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.button2.BackgroundImage = global::Boyut.TerminalProgramlari.Properties.Resources.power_off;
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.button2.Location = new System.Drawing.Point(602, 375);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(121, 75);
             this.button2.TabIndex = 2;
-            this.button2.Text = "OTURUMU KAPAT";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

@@ -117,8 +117,10 @@
     <None Include="Resources\hastane.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Resources\exit.png" />
     <Content Include="Resources\logo.ico" />
     <Content Include="Resources\logo.png" />
+    <Content Include="Resources\power-off.png" />
     <Content Include="Resources\raf.png" />
     <None Include="Resources\SEVKIYATHASTANE.png" />
     <None Include="Resources\SEVKIYATECZANE.png" />

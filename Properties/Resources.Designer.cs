@@ -73,6 +73,16 @@ namespace Boyut.TerminalProgramlari.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit {
+            get {
+                object obj = ResourceManager.GetObject("exit", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hastane {
             get {
                 object obj = ResourceManager.GetObject("hastane", resourceCulture);
@@ -106,6 +116,16 @@ namespace Boyut.TerminalProgramlari.Properties {
         internal static System.Drawing.Bitmap malgiris {
             get {
                 object obj = ResourceManager.GetObject("malgiris", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap power_off {
+            get {
+                object obj = ResourceManager.GetObject("power-off", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

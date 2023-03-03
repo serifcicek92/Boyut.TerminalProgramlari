@@ -99,6 +99,7 @@ namespace Boyut.TerminalProgramlari
 
 
                     if (trReplace(dosya).ToUpper().Contains("GIRIS") ||
+                        trReplace(dosya).ToUpper().Contains("CIKIS") ||
                         trReplace(dosya).ToUpper().Contains("SAYIM") ||
                         trReplace(dosya).ToUpper().Contains("SEVKIYAT") ||
                         trReplace(dosya).ToUpper().Contains("SEPET") ||
@@ -143,6 +144,7 @@ namespace Boyut.TerminalProgramlari
 
 
                     if (trReplace(dosya).ToUpper().Contains("GIRIS") ||
+                        trReplace(dosya).ToUpper().Contains("CIKIS") ||
                         trReplace(dosya).ToUpper().Contains("SAYIM") ||
                         trReplace(dosya).ToUpper().Contains("SEVKIYAT") ||
                         trReplace(dosya).ToUpper().Contains("SEPET") ||
@@ -194,6 +196,7 @@ namespace Boyut.TerminalProgramlari
             string dosya = linkBol[linkBol.Count() - 1];
             if (trReplace(dosya).ToUpper().Contains("GIRIS")) { button1.BackColor = Color.Red; button1.Text = ""; button1.BackgroundImage = Properties.Resources.malgiris; }
             if (trReplace(dosya).ToUpper().Contains("SAYIM")) { button1.BackColor = Color.Blue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.sayim; }
+            else if (trReplace(dosya).ToUpper().Contains("CIKIS")) { button1.BackColor = Color.Blue; button1.Text = ""; button1.BackgroundImage = Properties.Resources.exit; }
             else if (trReplace(dosya).ToUpper().Contains("SEVK")) {
                 if (trReplace(dosya).ToUpper().Contains("ECZANE"))
                 {

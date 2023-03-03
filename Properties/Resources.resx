@@ -117,15 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="sipariskontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sipariskontrol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sepet" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sepet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEVKIYATECZANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEVKIYATECZANE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="reyon_sorgu" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\reyon_sorgu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eczane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eczane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="hastane" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\hastane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="raf" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\raf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sayim" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\sayim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="RAFHASTANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAFHASTANE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="SEVKIYATHASTANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\SEVKIYATHASTANE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="spotreyon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\resources\spotreyon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="logo1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resources\logo.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,43 +157,26 @@
   <data name="malgiris" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\malgiris.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="raf" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\raf.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RAFECZANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RAFECZANE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="RAFHASTANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\RAFHASTANE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="reyon_sorgu" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\reyon_sorgu.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="reyon_sorgu_Eczane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reyon_sorgu_Eczane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="reyon_sorgu_Hastane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\reyon_sorgu_Hastane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sayim" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sayim.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="RAFECZANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\RAFECZANE.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="sepet" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sepet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="hastane" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\hastane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="sevkiyat" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\sevkiyat.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SEVKIYATECZANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEVKIYATECZANE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="exit" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="SEVKIYATHASTANE" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\SEVKIYATHASTANE.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="sipariskontrol" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\sipariskontrol.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="spotreyon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\resources\spotreyon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="power-off" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\power-off.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
